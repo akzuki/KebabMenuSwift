@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, KebabMenuSwiftDelegate {
+class ViewController: UIViewController {
 
     var menuLauncher: MenuLauncher!
     let menuDataSource: [Menu] = [
@@ -35,12 +35,14 @@ class ViewController: UIViewController, KebabMenuSwiftDelegate {
     @IBAction func showKebabMenu(sender: UIBarButtonItem) {
         menuLauncher.showMenu(withAnimation: .DropDown)
     }
-    
+}
+
+extension ViewController: KebabMenuSwiftDelegate {
     func didSelectMenuAtIndexPath(indexPath: Int) {
         switch indexPath {
         case 0:
             print("Refresh icon clicked")
-            //Do something here
+        //Do something here
         case 1:
             print("Mail icon clicked")
         default:

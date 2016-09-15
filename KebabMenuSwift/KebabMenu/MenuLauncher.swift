@@ -62,7 +62,7 @@ class MenuLauncher: NSObject {
         backgroundView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleDismiss)))
     }
     
-    func setBorder(radius radius: CGFloat, color: UIColor, borderWidth: CGFloat ) {
+    func setBorder(radius radius: CGFloat, color: UIColor, borderWidth: CGFloat) {
         menu.layer.cornerRadius = radius
         menu.layer.borderColor = color.CGColor
         menu.layer.borderWidth = borderWidth
