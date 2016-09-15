@@ -1,6 +1,6 @@
 # KebabMenuSwift
 
-`KebabMenuSwift` is a lightweighted, customizable and easy to use to add kebab menu to your iOS project.
+`KebabMenuSwift` is lightweight, customizable and easy to use to add kebab menu to your iOS project.
 `KebabMenuSwift` supports images also provides animations to display the menu.
 
 ## Screenshots
